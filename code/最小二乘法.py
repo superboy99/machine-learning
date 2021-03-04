@@ -28,7 +28,8 @@ for i in n:
 w = (xy_sum - n * x_bar * y_bar) / (x_sum - n * x_bar ** 2)
 b = y_bar - w * x_bar
 
-print(w, b)
+print("w=" + w, "b=" + b)
+print("拟合直线：" + "y=" + w + "*x" + b)
 
 plt.plot(x, w * x + b, "r-")
 plt.show()
